@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: salmon;
+    font-size: 1.4em;
+}
+
+.gifcontainer {
+    background-color: lightblue;
+    border-radius: 20px;
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 20px 10px;
+    margin-top: 1%;
+    
+}
+
+.gifs {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 425px){
+    .gifs{
+        grid-template-columns: 1fr;
+    }
+    button{
+        font-size: 2em;
+    }
+}
+@media (max-width: 750px){
+    .gifs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.ausd {
+    margin-left: 40%;
+}
+
+button {
+    margin: 3px;
+    background-color: orange;
+    border-color: teal;
+    border-style: ridge;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+img {
+    border-radius: 10px;
+}
+img:hover{
+    transition: 500ms;
+    margin-top: -6;
+    margin-left: -6;
+    border: 9px rgb(255, 217, 0) solid;
+}
